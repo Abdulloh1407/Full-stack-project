@@ -355,8 +355,8 @@ section.learner_reviews {
     }
 }
 footer {
-    background-color: var(--btn-clr);
-    color: var(--footer-clr);
+    background-color: #1E293B;
+    color: #fff;
     padding: 20px;
 
     .logo_imgs {
