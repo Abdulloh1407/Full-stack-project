@@ -248,7 +248,22 @@ section.register {
                     border-radius: 10px;
                     border: 1px solid #ccc;
                     background-color: #2563EB;
-                    color: #fff;
+                    transition: all .5s ease;
+                    a{
+                        color: #fff;
+                    }
+                    svg{
+                        stroke: #fff;
+                    }
+                }
+                button:hover{
+                    background-color: #fff;
+                    a{
+                        color: #0F172A;
+                    }
+                    svg{
+                        stroke: #0F172A;
+                    }
                 }
             }
         }

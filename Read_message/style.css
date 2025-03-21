@@ -132,144 +132,154 @@ header {
         right: 0;
     }
 }
-
 section.register {
-    margin-top: 10px;
     aside {
         display: none;
     }
-    
-    main {
-        width: 100%;
-        padding: 0px 20px 0px 20px;
 
-        .user_info {
+    main {
+        padding: 10px;
+
+        .search_cours {
+            align-items: start;
+
+            h1 {
+                color: #0F172A;
+            }
+        }
+        .search_bar {
+            width: 100%;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 10px;
+
+            label {
+                border: 1px solid #ccc;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 10px 5px 10px;
+                border-radius: 10px;
+
+                input {
+                    border: none;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+
+                svg {
+                    stroke: #334155;
+                }
+            }
+
             &>div {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                }
+
+                &>div {
+                    display: flex;
+                    gap: 10px;
+
+                    select {
+                        border: 1px solid #ccc;
+                        border-radius: 10px;
+                    }
+
+                    select:focus {
+                        outline: none;
+                    }
+
+                    button {
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        padding: 10px;
+                    }
+                }
+
+            }
+        }
+        .messages {
+            padding-right: 30px;
+            padding-left: 30px;
+            .message_card{
+                border: 1px solid #ccc;
+                padding: 20px;
+                margin-top: 10px;
+                border-radius: 10px;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-            }
-
-            label {
-                font-size: 18px;
-                color: #0F172A;
-            }
-
-            input {
-                width: 100%;
-                height: 40px;
-                padding-left: 10px;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-            }
-
-            select {
-                width: 100%;
-                height: 40px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                padding-left: 10px;
-            }
-
-            textarea {
-                width: 100%;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                padding-left: 10px;
-                padding-top: 10px;
-                resize: vertical;
-            }
-        }
-
-        .image_content{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 10px;
-            padding-bottom: 30px;
-
-            figure{
-                max-width: 500px;
-                width: 100%;
-                aspect-ratio: 16/9;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                overflow: hidden;
-
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            .upload{
-                width: 100%;
-                display: flex;
-                gap: 20px;
-
-                input{
-                    flex:1;
-                    height: 40px;
-                    padding-left: 10px;
-                    border-radius: 5px;
-                    border: 1px solid #ccc;
-                }
-
-                label{
-                    padding: 0 20px;
-                    display: flex;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    span{
-                        margin: auto;
+                a{
+                    div{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        object-fit: cover;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                        }
+                        h1{
+                            color: #0F172A;
+                        }
                     }
                 }
-            }
-
-            button{
-                height: 40px;
-                padding: 0 30px;
-                cursor: pointer;
-                border-radius: 5px;
-                border: none;
-                background: #000;
-                color: #fff;
+                p{
+                    color: #0F172A;
+                }
             }
         }
-        .lesson_links{
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            border: 1px solid #ccc;
-            border-radius: 15px;
-            padding: 20px;
-            label{
-                
-                color: #0F172A;
-            }
-            input{
-                width: 100%;
-                height: 40px;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-                padding-left: 10px;
-                
-            }
         
+
+
+        .pages {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+
+            button {
+                border: 1px solid #ccc;
+                padding: 10px 10px 5px 10px;
+                background-color: #E2E8F0;
+
+                a {
+                    color: #0F172A;
+                }
+            }
+
+            button:hover {
+                background-color: #0F172A;
+
+                svg {
+                    fill: #fff;
+                    stroke: #fff;
+                }
+
+                a {
+                    width: 100%;
+                    color: #fff;
+                }
+            }
         }
     }
 }
 footer {
-    background-color:#0F172A;
+    background-color: #0F172A;
     color: #fff;
     padding: 20px;
 
@@ -303,13 +313,12 @@ footer {
             gap: 20px;
 
             a {
-                color: #fff;
+                color: var(--footer-clr);
             }
         }
     }
 
 }
-
 @media (min-width: 600px) {
     header {
         padding: 10px 20px 0px 20px;
@@ -359,7 +368,6 @@ footer {
         }
     }
 }
-
 @media (min-width: 800px) {
     header {
         .find {
@@ -399,11 +407,9 @@ footer {
 
     section.register {
         display: flex;
-        margin-top: 20px;
-
         aside {
             width: 30%;
-            height: 80vh;
+            height: 85vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -419,8 +425,10 @@ footer {
                     width: 160px;
                     border-radius: 50%;
                 }
-                h6{
+
+                h6 {
                     font-size: 14px;
+
                 }
 
                 button {
@@ -429,7 +437,7 @@ footer {
                     align-items: center;
                     gap: 20px;
                     padding: 10px;
-                    font-size: 18px;
+                    font-size: 14px;
                     color: #0F172A;
                 }
             }
@@ -445,7 +453,7 @@ footer {
                     transition: all .5s ease;
 
                     a {
-                        color: #334155;
+                        color: #0F172A;
                     }
                 }
 
@@ -461,7 +469,25 @@ footer {
 
 
         }
+        main {
+            width: 70%;
+            align-items: center;
+         .search_bar{
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 20px;
+            &>div{
+                align-items: center;
+                gap: 10px;
+                p{
+                    flex-direction: row;
+                    gap: 5px;
+                }
+            }
+         }
+        }
     }
+
     footer {
         .links {
             flex-direction: row;
@@ -469,7 +495,6 @@ footer {
         }
     }
 }
-
 @media (min-width: 1000px) {
     header {
         .find {
@@ -478,45 +503,39 @@ footer {
             }
         }
     }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
 
-    section.register {
-        margin-top: 10px;
-        main {
-            .user_info {
-                textarea {
-                    border-radius: 10px;
-                    padding-left: 10px;
-                    padding-top: 10px;
-
-                }
-            }
+        p {
+            max-width: 350px;
         }
+
+        .links {
+            width: 80%;
+            justify-content: space-evenly;
+            gap: 50px;
+        }
+
     }
- footer {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     gap: 20px;
-
-     p {
-         max-width: 350px;
-     }
-
-     .links {
-         width: 80%;
-         justify-content: space-evenly;
-         gap: 50px;
-     }
-
- }
 }
-
 @media(min-width: 1200px) {
     header {
         padding: 13px 80px 15px 80px;
 
         .find {
             gap: 60px;
+        }
+    }
+    section.register {
+        main {
+            .search_bar{
+                padding: 30px;
+                padding-bottom: 10px;
+            }
+        
         }
     }
 }

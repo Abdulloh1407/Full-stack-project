@@ -297,7 +297,6 @@ section.see_video {
 }
 
 .show {
-    /* height: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -578,40 +577,12 @@ footer {
 
 @media (min-width:650px) {
 
-    /* .see_video{
-        .see_video_video {
-            & .video_bar {
-                & .instructor {
-                    & .about_cours {
-                        display: flex;
-                        .teacher {
-                            display: flex;
-                            align-items: center;
-                            gap: 10px; 
-                            img{
-                                width: 250px;
-                            }
-                        }
-                        .desc{
-                            h2{
-                                font-size: 25px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } */
+   
     section.see_video {
         .see_video_video {
-
-            /* padding-left: 10px; */
             .video_sidebar {
                 width: 60%;
                 padding-left: 50px;
-                /* display: flex; */
-                /* align-items: center; */
-                /* justify-content: center; */
             }
         }
     }
@@ -801,10 +772,11 @@ footer {
     
     section.see_video {
         & .see_video_video {
-            gap: 0px;
-
-            & .video_bar {
-                width: 64%;
+            /* padding-left: 80px; */
+            padding-right: 100px;
+            gap: 29px;
+         .video_bar {
+                width: 60%;
                 display: flex;
             }
         }

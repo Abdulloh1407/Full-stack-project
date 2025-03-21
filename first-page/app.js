@@ -1,4 +1,4 @@
-document.getElementById("menu-icon").addEventListener("click", function () {
+document.getElementById("menu-icon").addEventListener("click",  ()=> {
   document.getElementById("sidebar").classList.toggle("active");
 });
 document.getElementById("x").addEventListener("click", function () {

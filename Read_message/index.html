@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-reviews</title>
+    <title>My_profile</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div id="root">
         <header>
@@ -13,7 +15,7 @@
             <div class="find">
                 <p>O'quv kurslari</p>
                 <label for="
-                        find_input">
+                   find_input">
                     <i data-lucide="search"></i>
                     <input type="text" id="find_input" placeholder="Kurslarni kurush">
                 </label>
@@ -26,7 +28,7 @@
                     <i data-lucide="shopping-cart"></i>
                     <i data-lucide="bell"></i>
                     <span>
-                        <a href="">O</a>
+                        <a href="./../../index.html">O</a>
                     </span>
                 </div>
             </div>
@@ -69,61 +71,74 @@
                     </button>
                 </div>
                 <div class="categories">
-                    <button><a href="#">Profile</a></button>
-                    <button><a href="./My_courses/index.html">My courses</a></button>
-                    <button><a href="#">Teacher</a></button>
+                    <button><a href="../user/index.html">Profile</a></button>
+                    <button><a href="../">My courses</a></button>
+                    <button><a href="../My_Teachers/index.html">Teacher</a></button>
                     <button><a href="#">Messages</a></button>
-                    <button><a href="#">My reviews</a></button>
+                    <button><a href="../My_reviews/index.html">My reviews</a></button>
                 </div>
             </aside>
             <main>
-                <h1>Kuzatuvchilar izohlari:</h1>
-                <div class="review_card">
-                    <h1><span>Kurs nomi:</span> Ui va Ux dizayn kursi</h1>
-                    <div>
-                        <b>Reyting:</b>
-                         <p><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></p>
+                <div class="search_cours">
+                    <h1>Messages</h1>
+                    <div class="search_bar">
+                        <label for="search_1cours">
+                            <input type="text" placeholder="Kurslarni qidirish" id="search_1cours">
+                            <i data-lucide="search"></i>
+                        </label>
+                        <div>
+                            <p>Kurslarni
+                                <span>tartliblash</span>
+                            </p>
+                            <div>
+                                <select name="" id="courses">
+                                    <option value="">Boshlang'ich kurslar</option>
+                                    <option value="">Frontend kurslari</option>
+                                    <option value="">Backend kurslari</option>
+                                    <option value="">Ui va Ux kurslari</option>
+                                </select>
+                                <button><i data-lucide="list-filter-plus"></i> Saralash</button>
+                            </div>
+                        </div>
                     </div>
-                    <p><b>Izohlar</b>: Men avvaliga qo'rqib ketdim, dizayn tajribasi yo'q edi. Ammo o'qituvchi <b>Suxrob Nurali</b> murakkab tushunchalarni oson hazm
-                    bo'ladigan modullarga ajratishda ajoyib ish qildi. Videoma'ruzalar qiziqarli bo'ldi va haqiqiy misollar mening
-                    tushunishimni mustahkamlashga yordam berdi.</p>
                 </div>
-                <div class="review_card">
-                    <h1><span>Kurs nomi:</span> Ui va Ux dizayn kursi</h1>
-                    <div>
-                        <p><b>Reyting:</b></p>
-                         <p><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></p>
+                <div class="messages">
+                    <div class="message_card">
+                       <a href="#">
+                        <div>
+                            <img src="./asesst/img/channels4_profile.jpg" alt="">
+                            <h1>Suxrob Nurali</h1>
+                        </div>
+                       </a>
+                        <p>Savolingiz uchun rahmat! Siz duch kelayotgan muammolarni hal qilishga yordam beradigan PDF faylni yuboraman. Agar
+                        qo‘shimcha savollaringiz bo‘lsa, bemalol so‘rashingiz mumkin.</p>
                     </div>
-                    <p><b>Izohlar:</b> Men avvaliga qo'rqib ketdim, dizayn tajribasi yo'q edi. Ammo o'qituvchi <b>Suxrob Nurali</b> murakkab tushunchalarni oson hazm
-                    bo'ladigan modullarga ajratishda ajoyib ish qildi. Videoma'ruzalar qiziqarli bo'ldi va haqiqiy misollar mening
-                    tushunishimni mustahkamlashga yordam berdi.</p>
-                </div>
-                <div class="review_card">
-                    <h1><span>Kurs nomi:</span> Ui va Ux dizayn kursi</h1>
-                    <div>
-                         <b>Reyting</b>
-                         <p><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></p>
+                    <div class="message_card">
+                       <a href="#">
+                        <div>
+                            <img src="./asesst/img/8b747450-df24-4cd5-8333-84b56ea5766a.original.jpeg" alt="">
+                            <h1>Yunusbek Sadullayev</h1>
+                        </div>
+                       </a>
+                        <p>Savolingiz uchun rahmat! Siz duch kelayotgan muammolarni hal qilishga yordam beradigan PDF faylni yuboraman. Agar
+                        qo‘shimcha savollaringiz bo‘lsa, bemalol so‘rashingiz mumkin.</p>
                     </div>
-                    <p><b>Izohlar:</b>Men avvaliga qo'rqib ketdim, dizayn tajribasi yo'q edi. Ammo o'qituvchi <b>Suxrob Nurali</b> murakkab tushunchalarni oson hazm
-                    bo'ladigan modullarga ajratishda ajoyib ish qildi. Videoma'ruzalar qiziqarli bo'ldi va haqiqiy misollar mening
-                    tushunishimni mustahkamlashga yordam berdi.</p>
                 </div>
                 <div class="pages">
-                    <button><i data-lucide="chevron-left"></i></button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button><i data-lucide="chevron-right"></i></button>
+                    <button><i data-lucide="arrow-left"></i></button>
+                    <button><a href="#">1</a></i></button>
+                    <button><a href="#">2</a></i></button>
+                    <button><a href="#">3</a></i></button>
+                    <button><i data-lucide="arrow-right"></i></button>
                 </div>
-            </main>   
+            </main>
         </section>
         <footer id="footer">
             <div class="logo_imgs">
                 <a href="#"><img src="./asesst/img/logo.png" alt=""></a>
                 <p>O'quvchilarni qulay va qiziqarli onlayn ta'lim orqali kuchaytirish.
-                    Onlayn metor darsliklar - bu yuqori sifatli, moslashuvchan va arzon ta'lim tajribasini taqdim etishga
+                    Onlayn metor darsliklar - bu yuqori sifatli, moslashuvchan va arzon ta'lim tajribasini taqdim
+                    etishga
                     bag'ishlangan etakchi
                     onlayn ta'lim platformasi.</p>
             </div>
@@ -164,8 +179,9 @@
     </div>
 </body>
 <script src="https://unpkg.com/lucide@latest"></script>
-<script>
+<script async>
     lucide.createIcons();
 </script>
 <script src="./app.js"></script>
+
 </html>
