@@ -545,7 +545,7 @@ footer {
 }
 @media(min-width: 1200px) {
     header {
-        padding: 13px 80px 15px 80px;
+        padding: 13px 60px 15px 40px;
 
         .find {
             gap: 60px;
@@ -570,5 +570,8 @@ footer {
             }
          }
         }
+    }
+    footer{
+        padding: 10px 0px 10px 40px;
     }
 }

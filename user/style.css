@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 16px;
     background-color: rgb(253, 253, 250);
     position: sticky;
     top: 0;
@@ -516,10 +516,13 @@ footer {
 
 @media(min-width: 1200px) {
     header {
-        padding: 13px 80px 15px 80px;
+        padding: 13px 20px 15px 40px;
 
         .find {
             gap: 60px;
         }
+    }
+    footer{
+        padding-left: 40px;
     }
 }
