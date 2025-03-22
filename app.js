@@ -8,7 +8,7 @@ document.getElementById("x").addEventListener("click", function () {
 document.querySelectorAll(".toggle-button").forEach((button) => {
   button.addEventListener("click", function () {
     let contents = button.parentElement.querySelectorAll(".content");
-    let img = button.querySelector("img");
+    let img = button.querySelector("svg");
 
  
     document.querySelectorAll(".content").forEach((c) => {
@@ -38,7 +38,7 @@ document.querySelectorAll(".toggle-button").forEach((button) => {
 const wrapper = document.getElementById("cours_wrapper");
 
 function moveSlide() {
-  if (window.innerWidth <= 1150) return; // 900px dan kichik ekranda ishlamasin
+  if (window.innerWidth <= 1350) return; // 900px dan kichik ekranda ishlamasin
 
   const firstCard = wrapper.firstElementChild;
   const cardWidth = firstCard.offsetWidth + 10; // Karta kengligi + oraliq

@@ -182,6 +182,7 @@ section.register {
                     gap: 10px;
                     select{
                         border: 1px solid #ccc;
+                        border-radius: 10px;
                     }
                     select:focus{
                         outline: none;
@@ -206,8 +207,10 @@ section.register {
             gap: 20px;
             .card{
                 object-fit: cover;
+                padding: 10px;
                 img{
-                    width: 100%;
+                    width: 300px;
+                    border-radius: 20px;
                 }
                 h1{
                     font-size: 20px;
@@ -457,9 +460,7 @@ footer {
             width: 40%;
             align-items: center;
         }
-        &>div{
-            width: 100%;
-        }
+       
         }  
     }
     }
@@ -523,9 +524,12 @@ footer {
    section.register {
        main {
            .search_bar {
+            justify-content: space-between;
+            padding-left: 20px;
                &>div {
-                   justify-content: space-around;
-                   align-items: center;
+                width: 50%;
+                justify-content: space-around;
+                align-items: center;
                  p{
                     flex-direction: row;
                     gap: 10px;

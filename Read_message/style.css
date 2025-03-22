@@ -476,7 +476,13 @@ footer {
             justify-content: space-between;
             flex-direction: row;
             gap: 20px;
+            label{
+                width: 300px;
+            }
             &>div{
+                padding-right: 40px;
+                width: 50%;
+                justify-content: space-between;
                 align-items: center;
                 gap: 10px;
                 p{
@@ -523,7 +529,7 @@ footer {
 }
 @media(min-width: 1200px) {
     header {
-        padding: 13px 0px 15px 40px;
+        padding: 13px 40px 15px 40px;
 
         .find {
             gap: 60px;
@@ -532,8 +538,11 @@ footer {
     section.register {
         main {
             .search_bar{
-                padding: 30px;
-                padding-bottom: 10px;
+                padding: 10px 10px 20px 30px;
+                &>di{
+                    width: 100%;
+                    justify-content: space-around;
+                }
             }
         
         }

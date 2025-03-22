@@ -45,7 +45,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-
+    background-color: #0F172A;
+    svg{
+        color: #fff;
+    }
     a {
         img {
             width: 150px;
@@ -110,7 +113,11 @@ section.see_video {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
+    .title{
+        font-size: 24px;
+        color: #0F172A;
+        padding: 10px 0px 10px 0px;
+    }
     .see_video_video {
         width: 100%;
 
@@ -124,7 +131,8 @@ section.see_video {
             right: -100%;
             width: 98%;
             height: 100%;
-            /* background-color: #2563EB; */
+            background-color: #eaedf4;
+            border-radius: 20px;
             transition: right 0.3s ease-in-out;
             color: #000000;
         }
@@ -182,13 +190,13 @@ section.see_video {
                             font-size: 24px;
                             font-weight: 500;
                             color: #19191b;
-
+                            padding-bottom: 10px;
                         }
-
                         p {
-                            padding-left: 20px;
                             font-size: 16px;
                             font-weight: 400;
+                            line-height: 140%;
+                            color:#334155;
                         }
                     }
                 }
@@ -264,14 +272,23 @@ section.see_video {
             display: flex;
             flex-direction: column;
             align-items: start;
-            background-color: #acadae;
+            justify-content: space-between;
+            background-color: #0F172A;
             padding: 10px;
-
+            color: #fff;
             h1 {
+                width: 100%;
                 display: flex;
                 align-items: center;
-                gap: 120px;
+                justify-content: space-between;
                 font-size: 24px;
+                padding: 10px;
+            }
+            label{
+                transition: all .3s ease;
+                img{
+                    color: #fff;
+                }
             }
 
             .video_title {
@@ -351,7 +368,8 @@ section.courses_by_ins {
 
     h1 {
         font-size: 24px;
-
+        color: #0F172A;
+        padding-top: 20px;
         a {
             color: #2563EB;
         }
@@ -363,6 +381,7 @@ section.courses_by_ins {
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin-bottom: 30px;
         .cours_wrapper {
             display: flex;
             gap: 50px;
@@ -373,29 +392,42 @@ section.courses_by_ins {
                 width: 290px;
                 display: flex;
                 flex-direction: column;
+                border: 1px solid #ccc;
+                background-color: rgb(240, 244, 245);
+                color: #0F172A;
+                padding-bottom: 10px;
+                border-radius: 10px;
                 img {
                     width: 100%;
                     height: 200px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
                 }
 
                 h2 {
+                    padding-left: 20px;
                     font-size: 22px;
                 }
 
                 &>div {
+                    padding-left: 20px;
                     height: 60px;
                     display: flex;
                     align-items: center;
-                    img {
-                        width: 20px;
+                    gap: 10px;
+                    svg{
+                        fill: #8eaef5;
                     }
                 }
 
                 h6 {
+                    padding-left: 20px;
                     font-size: 20px;
+                    margin-bottom: 10px;
                 }
 
                 h5 {
+                    padding-left: 20px;
                     font-size: 18px;
                 }
             }
@@ -504,6 +536,7 @@ section.learner_reviews {
         }
 
         .title {
+            margin-bottom: 20px;
             &>div {
                 display: flex;
                 justify-content: start;
@@ -683,12 +716,11 @@ footer {
                     padding-bottom: 10px;
 
                     .about_cours {
-                        display: flex;
-                        gap: 20px;
-
+                        color: #334155;
                         .teacher {
                             align-items: center;
                             gap: 5px;
+                            margin-bottom: 10px;
 
                             img {
                                 width: 200px;
@@ -770,7 +802,7 @@ footer {
         padding: 10px 20px 10px 20px;
     }
     section {
-        padding: 0px 80px 0px 80px;
+        padding: 0px 60px 0px 60px;
     }
     
     section.see_video {
@@ -778,9 +810,35 @@ footer {
             padding-right: 100px;
             gap: 29px;
          .video_bar {
-                width: 60%;
+                width: 70%;
                 display: flex;
             }
         }
     }
+    section.courses_by_ins {
+        padding: 0;
+        h1{
+            padding-left: 60px;
+        }
+        & .cours {
+            .cours_wrapper {
+                gap: 10px; 
+                 transition: all 0.5s ease-in-out;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    section.courses_by_ins {
+            & .cours {
+                .cours_wrapper {
+                    gap: 40px;
+                    /* transition: all 0.5s ease-in-out;
+                    flex-wrap: wrap; */
+                }
+            }
+        }
+    
 }
