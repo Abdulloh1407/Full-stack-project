@@ -33,6 +33,29 @@ document.querySelectorAll(".toggle-button").forEach((button) => {
   });
 });
 
+document.querySelectorAll(".toggle-button").forEach((button) => {
+  button.addEventListener("click", function () {
+    let parent = button.closest(".video_title"); // Ota elementni topish
+    let contents = parent.querySelectorAll(".content"); // Ichki kontentlar
+    let icon = button.querySelector("img");
+    icon.style.transition = "transform 0.3s ease-in-out"; // Strelka ikonka
+
+    // Kontentlarni ko'rsatish yoki yashirish
+    contents.forEach((content) => {
+      content.classList.toggle("hidden");
+    });
+
+    // Strelka aylanishi
+    if (icon.style.transform === "rotate(180deg)") {
+      icon.style.transform = "rotate(0deg)";
+    } else {
+      icon.style.transform = "rotate(180deg)";
+    }
+
+    // Silliq animatsiya
+    icon.style.transition = "transform 0.3s ease-in-out";
+  });
+});
 
 
 const wrapper = document.getElementById("cours_wrapper");

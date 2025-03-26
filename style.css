@@ -355,13 +355,11 @@ section.see_video {
 }
 
 .toggle-button img {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.8s ease-in-out;
     margin-right: 10px;
 }
 
 section.courses_by_ins {
-    /* width: 100%; */
-    /* padding: 30px; */
     display: flex;
     flex-direction: column;
     gap: 50px;
