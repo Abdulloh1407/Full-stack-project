@@ -307,6 +307,11 @@ footer {
                 color: #fff;
             }
         }
+        &>div{
+            img{
+                margin-top: 20px;
+            }
+        }
     }
 
 }

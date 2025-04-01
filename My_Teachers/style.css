@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Ubuntu-LightItalic';
+    src: url(../asesst/font/Ubuntu-LightItalic.ttf) format("truetype");
+}
 * {
     margin: 0;
     padding: 0;
@@ -294,7 +298,6 @@ section.register {
                 background-color: #0F172A;
 
                 svg {
-                    fill: #fff;
                     stroke: #fff;
                 }
 
@@ -320,6 +323,7 @@ footer {
     }
 
     p {
+        font-family: 'Ubuntu-LightItalic';
         font-size: 20px;
         font-weight: 500;
     }
@@ -361,7 +365,7 @@ footer {
 
                 svg {
                     stroke: #334155;
-                    transition: all 0.5s ease-in-out;
+                    transition: all 0.3s ease-in-out;
                 }
 
                 svg:hover {
@@ -567,6 +571,7 @@ footer {
             .search_bar{
                 padding: 30px;
                 padding-bottom: 10px;
+                padding-left: 0;
             }
          .teachers_images{
             display: grid;

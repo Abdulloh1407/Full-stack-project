@@ -186,7 +186,7 @@ section.register {
                 background-color: #0F172A;
                 color: #fff;
                 svg {
-                    fill: #fff;
+                    /* fill: #fff; */
                     stroke: #fff;
                 }
 

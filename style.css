@@ -1,6 +1,13 @@
 @import "./asesst/font/Poppins-ExtraBold.ttf";
-@import "./asesst/font/Poppins-Regular.ttf";
-
+@import "./asesst/font/PlayfairDisplay-Regular.ttf";
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(./asesst/font/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Ubuntu-LightItalic";
+    src: url(./asesst/font/Ubuntu-LightItalic.ttf) format("truetype");
+}
 :root {
     --btn-clr: #0F172A;
     --link-clr: #2563EB;
@@ -14,8 +21,6 @@
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Pooppins-Regular;
-    font-family: Pooppins-ExtraBold;
 }
 
 body {
@@ -24,6 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family:'Poppins-Regular';
 }
 
 body:has(.nav>input:checked) {
@@ -46,6 +52,9 @@ header {
     align-items: center;
     padding: 10px;
     background-color: #0F172A;
+    position: sticky;
+    top: 0;
+    z-index: 4;
     svg{
         color: #fff;
     }
@@ -127,18 +136,22 @@ section.see_video {
 
         .modal1 {
             position: fixed;
-            top: 150px;
+            top: 140px;
             right: -100%;
-            width: 98%;
+            /* left: 0; */
+            width: 99%;
             height: 100%;
             background-color: #eaedf4;
             border-radius: 20px;
             transition: right 0.3s ease-in-out;
             color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .modal1.active {
-            right: 0;
+            right: 0px;
         }
 
         .video_sidebar_853 {
@@ -195,6 +208,7 @@ section.see_video {
                         p {
                             font-size: 16px;
                             font-weight: 400;
+                            font-family:'Ubuntu-LightItalic';
                             line-height: 140%;
                             color:#334155;
                         }
@@ -260,6 +274,7 @@ section.see_video {
                 h2 {
                     font-size: 18px;
                     font-weight: 400;
+                    font-family: 'Ubuntu-LightItalic';
                 }
             }
         }
@@ -271,7 +286,6 @@ section.see_video {
             border-radius: 16px;
             display: flex;
             flex-direction: column;
-            align-items: start;
             justify-content: space-between;
             background-color: #0F172A;
             padding: 10px;
@@ -303,9 +317,6 @@ section.see_video {
             }
 
         }
-
-
-
     }
 }
 
@@ -316,13 +327,13 @@ section.see_video {
 .show {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     gap: 10px;
     padding: 30px 10px 30px 10px;
     border: 1px solid #bfc1c4;
     transition: all .3s ease;
     margin-bottom: 1px;
-
+    font-family: 'Poppins-Regular';  
     input {
         width: 25px;
         height: 30px;
@@ -336,7 +347,6 @@ section.see_video {
     }
 
 }
-
 .hov:hover {
     background-color: #0F172A;
     color: #ffff;
@@ -403,6 +413,7 @@ section.courses_by_ins {
                 }
 
                 h2 {
+                    padding-top: 15px;
                     padding-left: 20px;
                     font-size: 22px;
                 }
@@ -503,7 +514,7 @@ section.learner_reviews {
 }
 
 .user_type { 
-    height: 290px;
+    height: 340px;
     overflow: hidden;
     position: relative;
     z-index: -3;
@@ -519,7 +530,6 @@ section.learner_reviews {
     animation: scrollReviews 4.8s linear infinite;
     position: relative;
     transition: all 0.5s ease-in-out;
-
     .review {
         gap: 20px;
         align-items: center;
@@ -527,12 +537,12 @@ section.learner_reviews {
         border: 1px solid #c6cacf;
         padding: 10px;
         border-radius: 20px;
-
+        
         img:first-child {
             width: 100px;
             border-radius: 100px;
         }
-
+        
         .title {
             margin-bottom: 20px;
             &>div {
@@ -540,31 +550,37 @@ section.learner_reviews {
                 justify-content: start;
                 align-items: center;
                 gap: 20px;
-
+                
                 p {
                     display: flex;
                     align-items: center;
                     font-size: 14px;
-
+                    
                     img {
                         width: 20px;
                     }
                 }
-
+                
                 h6 {
                     font-size: 16px;
+                    font-family: 'Ubuntu-LightItalic';
                 }
             }
+            p{
+                font-size: 16px;
+                font-family: 'Ubuntu-LightItalic';
+            }
         }
-
+        
     }
 }
 footer {
     background-color: var(--btn-clr);
     color: var(--footer-clr);
     padding: 20px;
+    margin-top: 10px;
     .logo_imgs{
-
+        
         img{
             width: 150px;
             padding-bottom: 10px;
@@ -573,6 +589,7 @@ footer {
     p{
         font-size: 20px;
         font-weight: 500;
+        font-family:"Ubuntu-LightItalic" ;
     }
     .links{
         display: flex;
@@ -589,6 +606,11 @@ footer {
             gap: 20px;
             a{
                 color:var(--footer-clr);
+            }
+        }
+        &>div{
+            img{
+                margin-top: 20px;
             }
         }
     }
@@ -829,6 +851,15 @@ footer {
 }
 
 @media (min-width: 1300px) {
+        section.see_video {
+                & .see_video_video {
+                    & .video_bar {
+                        .video_img {
+                            padding-right: 250px;
+                        }
+                    }
+                }
+            }
     section.courses_by_ins {
             & .cours {
                 .cours_wrapper {

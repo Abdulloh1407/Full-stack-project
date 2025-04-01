@@ -3,6 +3,10 @@
     src: url(./asesst/font/Inter_28pt-Regular.ttf) format("truetype");
 
 }
+@font-face {
+    font-family: 'Ubuntu-LightItalic';
+    src: url(../asesst/font/Ubuntu-LightItalic.ttf) format("truetype");
+}
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +21,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Inter_28pt-Regular';
+    /* font-family: 'Inter_28pt-Regular'; */
+    
 }
 #root {
     max-width: 1920px;
@@ -101,15 +106,20 @@ section.teacher_profile{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 16px; */
     .teacher{
         display: flex;
         flex-direction: column;
         gap: 10px;
-      .teacher_info{
-        display: flex;
-        gap: 20px;
-        h3{
+        &>div{
+            p{
+                font-family: 'Ubuntu-LightItalic';
+            }
+            
+        }
+        .teacher_info{
+            display: flex;
+            gap: 20px;
+            h3{
             font-size: 20px;
             display: flex;
             flex-direction: column;
@@ -128,6 +138,7 @@ section.teacher_profile{
             flex-direction: column;
             gap: 15px;
             p{
+                font-family: 'Ubuntu-LightItalic';
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -198,6 +209,7 @@ section.courses_by_ins {
                 }
 
                 h2 {
+                    padding-top: 20px;
                     font-size: 22px;
                     padding-left: 10px;
                 }
@@ -333,6 +345,9 @@ section.learner_reviews {
         }
 
         .title {
+            p{
+            font-family: 'Ubuntu-LightItalic';
+            }
             &>div {
                 display: flex;
                 justify-content: start;
@@ -358,10 +373,12 @@ section.learner_reviews {
     }
 }
 footer {
-    background-color: #1E293B;
+    background-color: #0F172A;
     color: #fff;
     padding: 20px;
-
+    p{
+    font-family: 'Ubuntu-LightItalic';
+    }
     .logo_imgs {
 
         img {

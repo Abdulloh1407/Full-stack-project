@@ -9,6 +9,7 @@ document.querySelectorAll(".toggle-button").forEach((button) => {
   button.addEventListener("click", function () {
     let contents = button.parentElement.querySelectorAll(".content");
     let img = button.querySelector("svg");
+    
 
  
     document.querySelectorAll(".content").forEach((c) => {
@@ -26,36 +27,36 @@ document.querySelectorAll(".toggle-button").forEach((button) => {
 
     // Har bir `.content` elementini ochish yoki yopish
     contents.forEach((content) => {
-      content.classList.toggle("show");
+    content.classList.toggle("show");
     });
 
     img.classList.toggle("rotated");
   });
 });
 
-document.querySelectorAll(".toggle-button").forEach((button) => {
-  button.addEventListener("click", function () {
-    let parent = button.closest(".video_title"); // Ota elementni topish
-    let contents = parent.querySelectorAll(".content"); // Ichki kontentlar
-    let icon = button.querySelector("img");
-    icon.style.transition = "transform 0.3s ease-in-out"; // Strelka ikonka
+// document.querySelectorAll(".toggle-button").forEach((button) => {
+//   button.addEventListener("click", function () {
+//     let parent = button.closest(".video_title"); // Ota elementni topish
+//     let contents = parent.querySelectorAll(".content"); // Ichki kontentlar
+//     let icon = button.querySelector("img");
+//     icon.style.transition = "transform 0.3s ease-in-out"; // Strelka ikonka
 
-    // Kontentlarni ko'rsatish yoki yashirish
-    contents.forEach((content) => {
-      content.classList.toggle("hidden");
-    });
+//     // Kontentlarni ko'rsatish yoki yashirish
+//     contents.forEach((content) => {
+//       content.classList.toggle("hidden");
+//     });
 
-    // Strelka aylanishi
-    if (icon.style.transform === "rotate(180deg)") {
-      icon.style.transform = "rotate(0deg)";
-    } else {
-      icon.style.transform = "rotate(180deg)";
-    }
+//     // Strelka aylanishi
+//     if (icon.style.transform === "rotate(180deg)") {
+//       icon.style.transform = "rotate(0deg)";
+//     } else {
+//       icon.style.transform = "rotate(180deg)";
+//     }
 
-    // Silliq animatsiya
-    icon.style.transition = "transform 0.3s ease-in-out";
-  });
-});
+//     // Silliq animatsiya
+//     icon.style.transition = "transform 0.3s ease-in-out";
+//   });
+// });
 
 
 const wrapper = document.getElementById("cours_wrapper");

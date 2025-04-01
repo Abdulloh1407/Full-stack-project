@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Ubuntu-LightItalic';
+    src: url(../asesst/font/Ubuntu-LightItalic.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Inter_28pt-Regular';
+ 
 }
 
 #root {
@@ -234,11 +239,13 @@ section.register {
                             border-radius: 50%;
                         }
                         h1{
+                            font-family: '';
                             color: #0F172A;
                         }
                     }
                 }
                 p{
+                    font-family: "Ubuntu-LightItalic";
                     color: #0F172A;
                 }
             }
@@ -266,7 +273,6 @@ section.register {
                 background-color: #0F172A;
 
                 svg {
-                    fill: #fff;
                     stroke: #fff;
                 }
 
@@ -292,6 +298,7 @@ footer {
     }
 
     p {
+        font-family: "Ubuntu-LightItalic";
         font-size: 20px;
         font-weight: 500;
     }

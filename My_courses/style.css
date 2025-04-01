@@ -261,7 +261,6 @@ section.register {
             button:hover{
                 background-color: #0F172A;
                 svg{
-                    fill: #fff;
                     stroke: #fff;
                 }
                 a{
