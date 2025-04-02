@@ -1,9 +1,10 @@
-@import "./asesst/font/Poppins-ExtraBold.ttf";
-@import "./asesst/font/PlayfairDisplay-Regular.ttf";
+@import "./asesst/font/Ubuntu-LightItalic.ttf";
+@import "./asesst/font/PlayfairDisplay-SemiBoldItalic.ttf";
 @font-face {
-    font-family: 'Poppins-Regular';
-    src: url(./asesst/font/Poppins-Regular.ttf) format("truetype");
+    font-family: 'PlayfairDisplay-SemiBoldItalic';
+    src: url(./asesst/font/PlayfairDisplay-Regular.ttf) format("truetype");
 }
+
 @font-face {
     font-family: "Ubuntu-LightItalic";
     src: url(./asesst/font/Ubuntu-LightItalic.ttf) format("truetype");
@@ -29,7 +30,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family:'Poppins-Regular';
+    h1,h2{
+        font-family:"PlayfairDisplay-SemiBoldItalic" ;
+    }
 }
 
 body:has(.nav>input:checked) {
@@ -514,7 +517,7 @@ section.learner_reviews {
 }
 
 .user_type { 
-    height: 340px;
+    height: 313px;
     overflow: hidden;
     position: relative;
     z-index: -3;
@@ -855,7 +858,7 @@ footer {
                 & .see_video_video {
                     & .video_bar {
                         .video_img {
-                            padding-right: 250px;
+                            padding-right: 150px;
                         }
                     }
                 }
@@ -870,4 +873,15 @@ footer {
             }
         }
     
+}
+@media (min-width:1550px) {
+    section.see_video {
+            & .see_video_video {
+                & .video_bar {
+                    .video_img {
+                        padding-right: 350px;
+                    }
+                }
+            }
+        }
 }

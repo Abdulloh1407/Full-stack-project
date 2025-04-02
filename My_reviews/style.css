@@ -1,3 +1,14 @@
+@import "./asesst/font/PlayfairDisplay-MediumItalic.ttf";
+@import "./asesst/font/Ubuntu-LightItalic.ttf";
+@font-face {
+    font-family: 'PlayfairDisplay-MediumItalic';
+    src: url(../asesst/font/PlayfairDisplay-MediumItalic.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Ubuntu-LightItalic';
+    src: url(../asesst/font/Ubuntu-LightItalic.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +24,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Inter_28pt-Regular';
 }
 
 #root {
@@ -147,6 +157,9 @@ section.register {
             font-size: 25px;
             font-weight: 600;
         }
+        p{
+            font-family: "Ubuntu-LightItalic";
+        }
         .review_card{
             display: flex;
             flex-direction: column;
@@ -210,8 +223,8 @@ footer {
     p {
         font-size: 20px;
         font-weight: 500;
+        font-family: "Ubuntu-LightItalic";
     }
-
     .links {
         display: flex;
         flex-direction: column;
@@ -333,8 +346,10 @@ footer {
                   gap: 10px;
     
                   .user_data1 {
-                      
-    
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                        gap: 10px;
                       img {
                           width: 160px;
                           border-radius: 50%;

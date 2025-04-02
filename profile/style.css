@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Inter_28pt-Regular';
-    src: url(./asesst/font/Inter_28pt-Regular.ttf) format("truetype");
+    font-family: 'PlayfairDisplay-VariableFont_wght';
+    src: url(../asesst/font/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
 
 }
 @font-face {
@@ -31,6 +31,9 @@ body {
     flex-direction: column;
     justify-content: center;
     transition: all .5s ease;
+    h1{
+        font-family: "PlayfairDisplay-VariableFont_wght";
+    }
 }
 header{
     width: 100%;
@@ -161,9 +164,16 @@ section.teacher_profile{
                 padding:10px 40px;
                 border-radius: 10px;
                 border: 1px solid;
+                transition: all .3s ease;
                 a{
                     color: #334155;
                 }
+            }
+        }
+        button:hover{
+            background-color: #334155;
+            a{
+                color: #fff;
             }
         }
     }

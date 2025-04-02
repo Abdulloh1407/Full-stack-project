@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Ubuntu-LightItalic';
+    src: url(../asesst/font/Ubuntu-LightItalic.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -288,6 +293,7 @@ footer {
     p {
         font-size: 20px;
         font-weight: 500;
+        font-family: "Ubuntu-LightItalic";
     }
 
     .links {
