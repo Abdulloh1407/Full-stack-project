@@ -321,7 +321,7 @@ section.learner_reviews {
 }
 
 .user_type {
-    height: 290px;
+    height: 180px;
     overflow: hidden;
     position: relative;
     z-index: -3;
@@ -425,14 +425,35 @@ footer {
     }
 
 }
+@media (min-width: 330px) {
+   
+   section.learner_reviews{
+    /* margin-bottom: 50px; */
+    .about_it{
+        .user_type{
+            height: 330px;
+            color: #fff;
+            .reviews{
+                .review{
+                    display: flex;
+                    /* flex-direction: column-reverse; */
+                    align-items: center;
+                    justify-content: start;
+                }
+            }
+        }
+    }
+   }
+}
 @media (min-width: 430px) {
     .reviews{
+        flex-direction: column;
         .review{
             display: flex;
         }
     }
     .user_type{
-        height: 210px;
+        height: 183px;
     }
 }
 @media (min-width: 600px) {
