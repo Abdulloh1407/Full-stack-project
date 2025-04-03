@@ -410,7 +410,7 @@ footer {
         }
     }
    section.register {
-    /* display: flex; */
+    display: flex;
     aside {
             width: 30%;
             height: 80vh;
